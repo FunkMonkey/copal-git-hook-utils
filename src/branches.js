@@ -8,7 +8,7 @@ export default {
   exitIfCurrentBranchIsNot( listOfBranches, exitCode ) {
     var currBranch = this.getCurrentBranch;
 
-    if( listOfBranches.indexOf( currBranch ) !== -1 )
+    if( listOfBranches.indexOf( currBranch ) === -1 )
       process.exit( exitCode );
   }
 };
